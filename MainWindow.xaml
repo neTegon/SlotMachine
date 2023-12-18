@@ -1,0 +1,62 @@
+﻿<Window x:Class="tegon.elettra._4i.SlotMachineWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tegon.elettra._4i.SlotMachineWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnSlot"
+                Grid.Row="2" Grid.Column="1"
+                FontSize="100"
+                Click="btnSlot_Click"
+                >GO</Button>
+        <Button x:Name="block1"
+            Grid.Row="1" Grid.Column="0"
+            FontSize="90"
+            Click="btnBlock1_CLick"
+            >Blocco</Button>
+        <Button x:Name="block2"
+             Grid.Row="1" Grid.Column="1"
+             FontSize="90"
+             Click="btnBlock2_CLick"
+             >Blocco</Button>
+        <Button x:Name="block3"
+             Grid.Row="1" Grid.Column="2"
+             FontSize="90"
+             Click="btnBlock3_CLick"
+             >Blocco</Button>   
+
+        <TextBlock x:Name="DesAlt" 
+                   Grid.Row="0" Grid.Column="0" 
+                   FontSize="100" 
+                   TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="DesBass" 
+           Grid.Row="2" Grid.Column="0" 
+           FontSize="100" 
+           TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="SinBass" 
+           Grid.Row="2" Grid.Column="2" 
+           FontSize="100" 
+           TextAlignment="Center" VerticalAlignment="Center"></TextBlock>   
+        <TextBlock x:Name="CentAlt" 
+           Grid.Row="0" Grid.Column="1" 
+           FontSize="100" 
+           TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="SinAlt" 
+           Grid.Row="0" Grid.Column="2" 
+           FontSize="100" 
+           TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
+    </Grid>
+</Window>
