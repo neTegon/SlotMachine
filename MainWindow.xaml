@@ -36,20 +36,22 @@
              Grid.Row="1" Grid.Column="2"
              FontSize="90"
              Click="btnBlock3_CLick"
-             >Blocco</Button>   
+             >Blocco</Button>
+        <Button x:Name="ritiro"
+         Grid.Row="2" Grid.Column="0"
+         FontSize="90"
+         Click="btnritiro_CLick"
+         >Ritiro</Button>   
 
         <TextBlock x:Name="DesAlt" 
                    Grid.Row="0" Grid.Column="0" 
                    FontSize="100" 
                    TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
-        <TextBlock x:Name="DesBass" 
-           Grid.Row="2" Grid.Column="0" 
-           FontSize="100" 
-           TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        
         <TextBlock x:Name="SinBass" 
            Grid.Row="2" Grid.Column="2" 
-           FontSize="100" 
-           TextAlignment="Center" VerticalAlignment="Center"></TextBlock>   
+           FontSize="50" 
+           TextAlignment="Center" VerticalAlignment="Center">Monete</TextBlock>   
         <TextBlock x:Name="CentAlt" 
            Grid.Row="0" Grid.Column="1" 
            FontSize="100" 

@@ -25,72 +25,79 @@ namespace tegon.elettra._4i.SlotMachineWPF
         bool b1 = false;
         bool b2 = false;
         bool b3 = false;
-        
+        int cont = 3;
+
+
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
 
-        private void btnSlot_Click(object sender, RoutedEventArgs e)
+        private void giri()
         {
-            while (s.Monete > 0)
+            if (cont == 3)
             {
                 s.Monete--;
-                for (int i = 0; i < 3; i++)
-                {
-                    if (b1 == true)
-                    {
-                        if (b2 == true)
-                        {
-                            s.carte("12");
-                        }
-                        else if (b3 == true)
-                        {
-                            s.carte("13");
-                        }
-                        else
-                        {
-                            s.carte("1");
-                        }
+                cont = 0;
 
-                    }
-                    else if (b2 == true)
-                    {
-
-                        if (b3 == true)
-                        {
-                            s.carte("23");
-                        }
-                        else
-                        {
-                            s.carte("2");
-                        }
-                    }
-                    else if (b3 == true)
-                    {
-                        s.carte("3");
-                    }
-                    else
-                    {
-                        s.carte();
-                    }
-
-                    
-                    DesAlt.Text = Convert.ToString(s.Val1);
-                    CentAlt.Text = Convert.ToString(s.Val2);
-                     SinAlt.Text = Convert.ToString(s.Val3);
-                    DesBass.Text = Convert.ToString(s.Monete);
-                }
-                SinBass.Text = Convert.ToString(Convert.ToString(s.cambioMonete()));
-                
             }
+        }
+        private void btnSlot_Click(object sender, RoutedEventArgs e)
+        {
+            giri();
+            cont++;
+            if (b1 == true)
+            {
+                if (b2 == true)
+                {
+                    s.carte("12");
+                }
+                else if (b3 == true)
+                {
+                    s.carte("13");
+                }
+                else
+                {
+                    s.carte("1");
+                }
+
+            }
+            else if (b2 == true)
+            {
+
+                if (b3 == true)
+                {
+                    s.carte("23");
+                }
+                else
+                {
+                    s.carte("2");
+                }
+            }
+            else if (b3 == true)
+            {
+                s.carte("3");
+            }
+            else
+            {
+                s.carte();
+            }
+
+
+            DesAlt.Text = Convert.ToString(s.Val1);
+            CentAlt.Text = Convert.ToString(s.Val2);
+            SinAlt.Text = Convert.ToString(s.Val3);
+
+            SinBass.Text = Convert.ToString(s.Monete);
+
+
         }
         private void btnBlock1_CLick(object sender, RoutedEventArgs e)
         {
-            if (b1==false)
+            if (b1 == false)
             {
-                
+
                 b1 = true;
             }
             else
@@ -122,6 +129,10 @@ namespace tegon.elettra._4i.SlotMachineWPF
                 b3 = false;
             }
         }
+        private void btnritiro_CLick(object sender, RoutedEventArgs e)
+        {
+            s.cambioMonete();
+        }
     }
-    
-}
+}   
+
