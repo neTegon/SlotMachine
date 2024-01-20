@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>tegon.elettra._4i.SlotMachineConsole</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\elettra.tegon.4i.SlotMachineLibreria\elettra.tegon._4i.SlotMachineLibreria.csproj" />
+  </ItemGroup>
+
+</Project>

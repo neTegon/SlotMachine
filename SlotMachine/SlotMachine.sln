@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tegon.elettra.4i.SlotMachineConsole", "tegon.elettra.4i.SlotMachineConsole\tegon.elettra.4i.SlotMachineConsole.csproj", "{3BC9FFFB-98B9-42D9-BB05-B07D6FF28349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "elettra.tegon._4i.SlotMachineLibreria", "elettra.tegon.4i.SlotMachineLibreria\elettra.tegon._4i.SlotMachineLibreria.csproj", "{235AE95A-51F1-4923-B50C-2613ACC9A089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tegon.elettra.4i.SlotMachineWPF", "tegon.elettra.4i.SlotMachineWPF\tegon.elettra.4i.SlotMachineWPF.csproj", "{97D7946B-B55B-4E16-9A78-A81EB27A2C91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BC9FFFB-98B9-42D9-BB05-B07D6FF28349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC9FFFB-98B9-42D9-BB05-B07D6FF28349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC9FFFB-98B9-42D9-BB05-B07D6FF28349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC9FFFB-98B9-42D9-BB05-B07D6FF28349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235AE95A-51F1-4923-B50C-2613ACC9A089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235AE95A-51F1-4923-B50C-2613ACC9A089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235AE95A-51F1-4923-B50C-2613ACC9A089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235AE95A-51F1-4923-B50C-2613ACC9A089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D7946B-B55B-4E16-9A78-A81EB27A2C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D7946B-B55B-4E16-9A78-A81EB27A2C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D7946B-B55B-4E16-9A78-A81EB27A2C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D7946B-B55B-4E16-9A78-A81EB27A2C91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B39DAB53-68CC-4C4F-B416-B1E8CA156381}
+	EndGlobalSection
+EndGlobal
